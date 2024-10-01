@@ -74,9 +74,32 @@ class Page1 extends StatelessWidget {
               ),
             ),
           ],
-        ),
-      ),
+      )),
+      bottomNavigationBar: NavigationBar(),
     );
   }
+  Widget NavigationBar() {
+    return BottomNavigationBar(
+      type: BottomNavigationBarType.fixed,
+        items: [
+          BottomNavigationBarItem(
+              label: 'explore',
+              icon: Icon(Icons.explore_outlined)),
+          BottomNavigationBarItem(
+              label: 'Destination',
+              icon: Icon(Icons.place_outlined)),
+          BottomNavigationBarItem(
+              label: 'explore',
+              icon: Icon(Icons.category_outlined)),
+          BottomNavigationBarItem(
+              label: 'Booking',
+              icon: Icon(Icons.my_library_books_outlined)),
+          BottomNavigationBarItem(
+              label: 'Profil',
+              icon: Icon(Icons.person_outline_rounded)),
+        ],
+    );
+  }
+  
 }
 

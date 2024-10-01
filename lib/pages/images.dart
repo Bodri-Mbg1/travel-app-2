@@ -73,42 +73,31 @@ class images1 extends StatelessWidget {
             ),
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.only(right: 34),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(right: 70),
-                child: Container(
-                  child: Column(
-                    children: [
-                      Text('Abu Dhabi', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, fontFamily: 'TangoSans'), ),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 50),
-                        child: Text(
-                          'Dubai', style: TextStyle(fontSize: 18, color: Colors.blueGrey), ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(right: 40),
+        Row(
+          children: [
+            Padding(
+                padding: const EdgeInsets.all(14.0),
                 child: Column(
-                  children: [
-                    Text('Abu Dhabi', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, fontFamily: 'TangoSans'), ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 50),
-                      child: Text(
-                        'Dubai', style: TextStyle(fontSize: 18, color: Colors.blueGrey), ),
-                    ),
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                Text('Abu Dhabi', style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold, fontFamily: 'TangoSans'),),
+                Text('Dubai', style: TextStyle(fontSize: 13, color: Colors.blueGrey),),
                   ],
                 ),
               ),
-            ],
-          ),
+    SizedBox (width: 110),
+      Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+      Text('Turkey(Value Tour)', style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold, fontFamily: 'TangoSans'),),
+      Text('Turkey', style: TextStyle(fontSize: 13, color: Colors.blueGrey),),
+      ],
+      ),
+
+          ],
         ),
+        
+
 
         Container(
           child: Container(
@@ -131,7 +120,7 @@ class images1 extends StatelessWidget {
                         width: 170,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                            image: AssetImage('assets/img/r0_108_2121_1305_w1200_h678_fmax.jpg'),
+                            image: AssetImage('assets/img/146.jpg'),
                             fit: BoxFit.cover, // L'image couvre tout le conteneur
                           ),
                         ),
@@ -160,7 +149,7 @@ class images1 extends StatelessWidget {
                           width: 170,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/img/Hagia-Sophia-Museum-Kesari-tours.jpg'),
+                              image: AssetImage('assets/img/5425437414cc48509d1f8b7c.jpg'),
                               fit: BoxFit.cover, // L'image couvre tout le conteneur
                             ),
                           ),
@@ -173,11 +162,36 @@ class images1 extends StatelessWidget {
 
                 ],
               ),
+
+
             ),
           ),
 
 
 
+        ),
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(14.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('Abu Dhabi', style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold, fontFamily: 'TangoSans'),),
+                  Text('Dubai', style: TextStyle(fontSize: 13, color: Colors.blueGrey),),
+                ],
+              ),
+            ),
+            SizedBox (width: 110),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Turkey(Value Tour)', style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold, fontFamily: 'TangoSans'),),
+                Text('Turkey', style: TextStyle(fontSize: 13, color: Colors.blueGrey),),
+              ],
+            ),
+
+          ],
         ),
 
       ],
