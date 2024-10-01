@@ -14,7 +14,8 @@ class Test extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(30.0),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   GestureDetector(
                     onTap: () {
@@ -30,10 +31,11 @@ class Test extends StatelessWidget {
                     ),
                   ),
 
-                  Padding(
-                    padding: const EdgeInsets.only(left: 0),
-                    child: Text('All Photo', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, fontFamily: 'TangoSans'),),
-                  ),
+                  SizedBox(width: 90,),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 0),
+                      child: Text('All Photo', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, fontFamily: 'TangoSans'),),
+                    ),
                 ],
               ),
             ),

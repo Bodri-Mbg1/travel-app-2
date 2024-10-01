@@ -36,7 +36,7 @@ class Page1 extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(right: 21, top: 54),
                   child: CircleAvatar(
-                    radius: 25,
+                    radius: 20,
                     backgroundImage: AssetImage('assets/img/NicePng_cammy-png_1829287.png'),
                   ),
                 ),
